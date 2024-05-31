@@ -1,41 +1,62 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Question</title>
+    <style>
+        /* Styles for the quotation */
         .styled-quote {
             max-width: 600px;
-            margin: 10px;
+            margin: 10px auto;
             padding: 15px;
             border-left: 8px solid green;
             background-color: #f8fffe;
             font-weight: bold;
         }
+        /* Styles for the quiz question */
+        .quiz-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .question {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .options {
+            display: inline-block;
+            text-align: left;
+        }
+        .option {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<section>
-	<h1>What is the captial of India?</h1>
-	<form>
-	<label>
-	<input type="radio" name="city" value="New Delhi">
-	  New Delhi
-	</label>		
-	</br>
-	<label>	
-	<input type="radio" name="city" value="Mumbai">
-	Mumbai
-	</label>	
-	</form>		
-	<blockquote class="styled-quote">
+
+    <div class="quiz-container">
+        <!-- Question -->
+        <div class="question">
+            What is the capital of India?
+        </div>
+
+        <!-- Options -->
+        <div class="options">
+            <div class="option">
+                <input type="radio" id="new-delhi" name="capital" value="new-delhi">
+                <label for="new-delhi">New Delhi</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="mumbai" name="capital" value="mumbai">
+                <label for="mumbai">Mumbai</label>
+            </div>
+        </div>
+
+        <!-- Quotation -->
+        <blockquote class="styled-quote">
             "New Delhi is the capital of India and an administrative district of NCT Delhi." - Wikipedia
         </blockquote>
-    </section>
-	
+    </div>
 
 </body>
 </html>
